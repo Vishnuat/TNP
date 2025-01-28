@@ -139,12 +139,12 @@ async def get_user_settings(from_user, data: str, uset_data: str):
                 f'<b>┃ Sufname: </b><i>{sufmsg}</i>\n'
                 f'<b>┃ Remname: </b><i>{rmmsg}</i>\n'
                 f'<b>┃ Metadata: </b><i>{metadata}</i>\n'
-                f'<b>┃ </b>UserDump/Tds: </b><i>{dumpch}</i>\n'
-                f'<b>┃ </b>Custom GDrive: </b><i>{gdxmsg}</i>\n'
-                f'<b>┃ </b>Custom Caption: </b><i>{custom_cap}</i>\n'
-                f'<b>┃ </b>Session String: </b><i>{sesmsg}</i>\n'
-                f'<b>┃ </b>Default Upload: </b><i>{du}</i>\n'
-                f'<b>┃ </b>YT-DLP Options: </b><i>{yto}</i>\n\n')
+                f'<b>┃ UserDump/Tds: </b><i>{dumpch}</i>\n'
+                f'<b>┃ Custom GDrive: </b><i>{gdxmsg}</i>\n'
+                f'<b>┃ Custom Caption: </b><i>{custom_cap}</i>\n'
+                f'<b>┃ Session String: </b><i>{sesmsg}</i>\n'
+                f'<b>┃ Default Upload: </b><i>{du}</i>\n'
+                f'<b>┃ YT-DLP Options: </b><i>{yto}</i>\n\n')
         text += f'<b>┖ Leech Split Size ~ </b><i> {get_readable_file_size(config_dict["LEECH_SPLIT_SIZE"])}</i> <blockquote>'
         if user_dict.get('rclone_path', '').startswith('mrcc') and not await aiopath.exists(rclone_path):
             text += '\n<i>┖ Using custom rclone path but user rclone not found, mirror upload will fail!</i>'
