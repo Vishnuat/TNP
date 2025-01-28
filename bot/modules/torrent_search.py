@@ -273,14 +273,14 @@ class TorSeacrh:
                     buttons.button_data('Cancel', 'torser cancel')
                     await self.send_list_message(f'Search not found for <i>{self.query}</i> in <i>{SITES.get(self.site).title()}</i>', buttons.build_menu(2))
                     return
-                cap = ('<b>Torrent Search Result:</b>\n'
+                cap = ('<blockquote> <b>Torrent Search Result:</b>\n'
                        f'<b>┌ Found: </b>{search_results["total"]}\n'
                        f'<b>├ Elapsed: </b>{get_readable_time(time() - self._message.date.timestamp())}\n'
                        f'<b>├ Cc: </b>{self._message.from_user.mention}\n'
                        f'<b>├ Action: </b>{action(self._message)}\n'
                        f'<b>├ Add: </b>{dt_date}\n'
                        f'<b>├ At: </b>{dt_time} ({TIME_ZONE_TITLE})\n'
-                       '<b>├ Mode: </b>API\n')
+                       '<b>├ Mode: </b> API\n </blockquote>')
                 match self.method:
                     case 'apitrend':
                         cap += ('<b>├ Category: </b>Trending\n'
@@ -313,7 +313,7 @@ class TorSeacrh:
                 buttons.button_data('Cancel', 'torser cancel')
                 await self.send_list_message(f'Search not found for <i>{self.query}</i> in <i>{self.site.title()}</i>', buttons.build_menu(2))
                 return
-            cap = ('<b>Torrent Search Result:</b>\n'
+            cap = ('<blockquote> <b>Torrent Search Result:</b>\n'
                    f'<b>┌ Found: </b>{total_results}\n'
                    f'<b>├ Elapsed: </b>{get_readable_time(time() - self._message.date.timestamp())}\n'
                    f'<b>├ Cc: </b>{self._tag}\n'
@@ -322,7 +322,7 @@ class TorSeacrh:
                    f'<b>├ At: </b>{dt_time} ({TIME_ZONE_TITLE})\n'
                    '<b>├ Mode: </b>Plugin\n'
                    f'<b>├ Torrent Site: </b><i>{self.site.title()}</i>\n'
-                   f'<b>└ Input Key: </b><code>{self.query.title()}</code>')
+                   f'<b>└ Input Key: </b><code>{self.query.title()}</code> </blockquote>')
             await sync_to_async(client.search_delete, search_id=search_id)
             await sync_to_async(client.auth_log_out)
 
