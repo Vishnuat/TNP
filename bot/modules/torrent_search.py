@@ -320,7 +320,7 @@ class TorSeacrh:
                    f'<b>├ Action: </b>{action(self._message)}\n'
                    f'<b>├ Add: </b>{dt_date}\n'
                    f'<b>├ At: </b>{dt_time} ({TIME_ZONE_TITLE})\n'
-                   '<b>├ Mode: </b>Plugin\n'
+                   '<b>├ Mode: </b> Plugin\n'
                    f'<b>├ Torrent Site: </b><i>{self.site.title()}</i>\n'
                    f'<b>└ Input Key: </b><code>{self.query.title()}</code> </blockquote>')
             await sync_to_async(client.search_delete, search_id=search_id)
