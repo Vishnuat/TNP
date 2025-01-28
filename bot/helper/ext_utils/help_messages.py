@@ -45,20 +45,20 @@ Timeout: 60s.</i>
 '''
     PRE = '''
 <b>PRENAME SETTING</b>\n
-Example: <b>@hexafreinds -</b>\n
+Example: <b>@SharkToonsIndia -</b>\n
 <b>Org Name:</b>
 <code>Ironman 1 (2008) [1080p].mkv</code>
 <b>Result:</b>
-<code>@hexafreinds - Ironman 1 (2008) [1080p].mkv</code>\n
+<code>@SharkToonsIndia - Ironman 1 (2008) [1080p].mkv</code>\n
 <i>Timeout: 60s.</i>
 '''
     SUF = '''
 <b>SUFNAME SETTING</b>\n
-Example: <b>- @hexafreinds</b>\n
+Example: <b>- @SharkToonsIndia</b>\n
 <b>Org Name:</b>
 <code>Ironman 1 (2008) [1080p].mkv</code>
 <b>Result:</b>
-<code>Ironman 1 (2008) [1080p] - @hexafreinds.mkv</code>\n
+<code>Ironman 1 (2008) [1080p] - @SharkToonsIndia.mkv</code>\n
 <i>Timeout: 60s.</i>
 '''
     SES = f'''
@@ -164,7 +164,7 @@ class HelpString:
 '''
 
     MLNOTE = '''
-Available Arguments:
+<blockquote>Available Arguments:
 🌝 New Name: <code>-n</code>
 🌝 Zip to Archive: <code>-z</code>
 🌝 Extract Archive: <code>-e</code>
