@@ -187,7 +187,7 @@ def get_readable_message(sid: int, is_user: bool, page_no: int=1, status : str='
     if not msg:
         if status == 'All':
             return None, None
-        msg = f'<blockquote>No Active {status} Task!</blockquote>\n'
+        msg = f'No Active {status} Task!\n'
 
     for task in tasks:
         tstatus = task.status()
