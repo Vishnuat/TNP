@@ -34,12 +34,12 @@ async def mirror_status(_, message: Message):
                 del Intervals['status'][sid]
         await gather(sendStatusMessage(message, user_id), deleteMessage(message))
     else:
-        msg = ('No Active Downloads!\n'
+        msg = (f'<blockquote> No Active Downloads!\n'
                f'⁍ My status: <code>/{BotCommands.StatusCommand} me</code>\n'
                f'⁍ User status: <code>/{BotCommands.StatusCommand} user_id</code>\n'
                '▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n'
                f'<b>CPU:</b> {cpu_percent()}% | <b>RAM:</b> {virtual_memory().percent}% | <b>FREE:</b> {get_readable_file_size(disk_usage(config_dict["DOWNLOAD_DIR"]).free)}\n'
-               f'<b>IN:</b> {get_readable_file_size(net_io_counters().bytes_recv)}<b> | OUT:</b> {get_readable_file_size(net_io_counters().bytes_sent)} | {get_readable_time(time() - botStartTime)}')
+               f'<b>IN:</b> {get_readable_file_size(net_io_counters().bytes_recv)}<b> | OUT:</b> {get_readable_file_size(net_io_counters().bytes_sent)} | {get_readable_time(time() - botStartTime)} </blockquote>')
         statusmsg = await sendingMessage(msg, message, config_dict['IMAGE_STATUS'])
         await auto_delete_message(message, statusmsg)
 
@@ -112,11 +112,11 @@ async def status_pages(_, query: CallbackQuery):
                                 samvid += 1
 
                 msg = f'''
-Tasks ({count})
+<blockquote> Tasks ({count})
 ZIP: {archive} | UZIP: {extract} | SPL: {split} | DL: {download} | UL {upload} | QDL: {queuedl} | QUL: {queueul} | PS: {pause} | SD: {seed} | CL: {clone} | SV: {samvid}
 
 Limits
-DL: {config_dict.get('TORRENT_DIRECT_LIMIT', '~ ')}GB | Z/U: {config_dict.get('ZIP_UNZIP_LIMIT', '~ ')}GB | MG: {config_dict.get('MEGA_LIMIT', '~ ')}GB
+DL: {config_dict.get('TORRENT_DIRECT_LIMIT', '~ ')}GB | Z/U: {config_dict.get('ZIP_UNZIP_LIMIT', '~ ')}GB | MG: {config_dict.get('MEGA_LIMIT', '~ ')}GB </blockquote>
 '''
                 await query.answer(msg, True)
     except:
