@@ -69,9 +69,9 @@ Send valid session string (Pyrogram V2) to download content from restricted Chat
 '''
     REM = '''
 <b>REMNAME SETTING</b>\n
-Example: <code>[</code><b>|</b><code>]</code><b>|</b> <code>-</code> <b>|</b> <code>webiste.com</code>\n
+Example: <code>[</code><b>|</b><code>]</code><b>|</b> <code>-</code> <b>|</b> <code>website.com</code>\n
 <b>Org Name:</b>
-<code>Ironman 1 (2008) [1080p] webiste.com.mkv</code>
+<code>Ironman 1 (2008) [1080p] website.com.mkv</code>
 <b>Result:</b>
 <code>Ironman 1 (2008) 1080p.mkv</code>
 <b>Current:</b> <code>{}</code>\n
