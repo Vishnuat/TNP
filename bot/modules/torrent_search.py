@@ -76,17 +76,17 @@ async def getResult(search_results: list, key: str, message: Message, method: st
                 try:
                     if 'name' in result.keys():
                         if style == 'tele':
-                            msg += f"<a href='{result['url']}'>{escape(result['name'])}</a><br>"
+                            msg += f"<blockquote> <a href='{result['url']}'>{escape(result['name'])}</a><br> </blockquote>"
                         else:
-                            msg += f"<code><a href='{result['url']}'>{escape(result['name'])}</a></code><br>"
+                            msg += f"<blockquote> <code><a href='{result['url']}'>{escape(result['name'])}</a></code><br> </blockquote>"
                     if 'torrents' in result.keys():
                         for subres in result['torrents']:
-                            msg += (f"<b>Quality: </b>{subres['quality']} | <b>Type: </b>{subres['type']} | "
-                                    f"<b>Size: </b>{subres['size']}<br>")
+                            msg += (f"<blockquote> <b>Quality: </b>{subres['quality']} | <b>Type: </b>{subres['type']} | "
+                                    f"<b>Size: </b>{subres['size']}<br> </blockquote>")
                             if 'torrent' in subres.keys():
-                                msg += f"<a href='{subres['torrent']}'>Direct Link</a><br>"
+                                msg += f"<blockquote> <a href='{subres['torrent']}'>Direct Link</a><br> </blockquote>"
                             elif 'magnet' in subres.keys():
-                                msg += "<b>Share Magnet to</b><a href='http://t.me/share/url?url={subres['magnet']}'>Telegram</a><br>"
+                                msg += "<blockquote> <b>Share Magnet to</b><a href='http://t.me/share/url?url={subres['magnet']}'>Telegram</a><br> </blockquote>"
                         msg += '<br>'
                     else:
                         msg += f"<b>Size: </b>{result['size']}<br>"
@@ -103,14 +103,14 @@ async def getResult(search_results: list, key: str, message: Message, method: st
                 except:
                     continue
             else:
-                msg += (f"<a href='{result.descrLink}'>{escape(result.fileName)}</a><br>"
+                msg += (f"<blockquote> <a href='{result.descrLink}'>{escape(result.fileName)}</a><br>"
                         f"<b>Size: </b>{get_readable_file_size(result.fileSize)}<br>"
-                        f"<b>Seeders: </b>{result.nbSeeders} | <b>Leechers: </b>{result.nbLeechers}<br>")
+                        f"<b>Seeders: </b>{result.nbSeeders} | <b>Leechers: </b>{result.nbLeechers}<br> </blockquote>")
                 link = result.fileUrl
                 if link.startswith('magnet:'):
-                    msg += f"<b>Share Magnet to</b> <a href='http://t.me/share/url?url={quote(link)}'>Telegram</a><br><br>"
+                    msg += f"<blockquote> <b>Share Magnet to</b> <a href='http://t.me/share/url?url={quote(link)}'>Telegram</a><br><br> </blockquote>"
                 else:
-                    msg += f"<a href='{link}'>Direct Link</a><br><br>"
+                    msg += f"<blockquote> <a href='{link}'>Direct Link</a><br><br> </blockquote>"
 
             if style == 'tele':
                 contents.append(str(index).zfill(3) + '. ' + msg.replace('<br>', '\n'))
