@@ -26,7 +26,7 @@ async def purge_message(client: Client, message: Message):
         await client.delete_messages(message.chat.id, mid)
 
     await gather(*[_delete(mid) for mid in range(reply_to.id, message.id)])
-    await gather(deleteMessage(message), editMessage(f'Purged message successfully in {get_readable_time(time() - message.date.timestamp()) or "0s"}.', msg))
+    await gather(deleteMessage(message), editMessage(f'<code>Purged message successfully in {get_readable_time(time() - message.date.timestamp()) or "0s"}.</code>', msg))
 
 
 bot.add_handler(MessageHandler(purge_message, filters=command(BotCommands.PurgeCommand) & CustomFilters.owner))
