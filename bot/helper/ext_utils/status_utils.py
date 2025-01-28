@@ -125,7 +125,7 @@ def action(message: Message):
 
 
 def get_readable_message(sid: int, is_user: bool, page_no: int=1, status : str='All', page_step: int=1):
-    msg = f'<a href="https://t.me/maheshsirop"><b><i>Bot By Mahesh Kadali</b></i></a>\n\n'
+    msg = f'<a href="https://t.me/SharkToonsIndia"><b><i>Bot By Shark Toons India</b></i></a>\n\n'
     dl_speed = up_speed = 0
 
     if status == 'All':
@@ -187,7 +187,7 @@ def get_readable_message(sid: int, is_user: bool, page_no: int=1, status : str='
     if not msg:
         if status == 'All':
             return None, None
-        msg = f'No Active {status} Task!\n'
+        msg = f'<blockquote>No Active {status} Task!</blockquote>\n'
 
     for task in tasks:
         tstatus = task.status()
@@ -220,4 +220,4 @@ def get_readable_message(sid: int, is_user: bool, page_no: int=1, status : str='
             f'<b>CPU:</b> {cpu_percent()}% <b>| RAM:</b> {virtual_memory().percent}% <b>| FREE:</b> {get_readable_file_size(disk_usage(config_dict["DOWNLOAD_DIR"]).free)}\n'
             f'<b>IN:</b> {get_readable_file_size(net_io_counters().bytes_recv)}<b> | OUT:</b> {get_readable_file_size(net_io_counters().bytes_sent)}\n'
             f'<b>DL:</b> {get_readable_file_size(dl_speed)}/s<b> | UL:</b> {get_readable_file_size(up_speed)}/s <b>|</b> {get_readable_time(time() - botStartTime)}')
-    return msg, buttons.build_menu(6)
+    return f'<blockquote>{msg}</blockquote>', buttons.build_menu(6)
