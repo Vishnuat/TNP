@@ -221,20 +221,20 @@ function s_validate() {
 </script>
 </head>
 <body>
-  <!--© Designed and coded by @maheshsirop-Telegram-->
+  <!--© Designed and coded by @SharkToonsIndia-Telegram-->
     <header>
       <div class="brand">
         <img
           src="https://graph.org/file/1a6ad157f55bc42b548df.png"
           alt="logo"
         />
-        <a href="https://t.me/maheshsirop">
+        <a href="https://t.me/SharkToonsIndia">
           <h2 class="name">Bittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://www.instagram.com/mahesh_namikaze?igsh=NTh0dWprZjExeW81"><i class="fab fa-instagram"></i></a>
-        <a href="https://t.me/Maheshsirop"><i class="fab fa-telegram"></i></a>
+        <a href="https://t.meSharkToonsIndia"><i class="fab fa-telegram-v1"></i></a>
+        <a href="https://t.me/SharkToonsBacup"><i class="fab fa-telegram-v2"></i></a>
       </div>
     </header>
     <div id="sticks">
@@ -613,20 +613,20 @@ section span{
     </style>
   </head>
 <body>
-   <!--© Designed and coded by @maheshsirop-Telegram-->
+   <!--© Designed and coded by @SharkToonsIndia-Telegram-->
     <header>
       <div class="brand">
         <img
           src="https://graph.org/file/1a6ad157f55bc42b548df.png"
           alt="logo"
         />
-        <a href="https://t.me/hexafreinds">
+        <a href="https://t.me/SharkToonsIndia">
           <h2 class="name">Bittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://www.instagram.com/mahesh_namikaze?igsh=NTh0dWprZjExeW81"><i class="fab fa-instagram"></i></a>
-        <a href="https://t.me/hexafreinds"><i class="fab fa-telegram"></i></a>
+        <a href="https://t.me/SharkToonsIndia"><i class="fab fa-telegram-v1"></i></a>
+        <a href="https://t.me/SharkToonsBackup"><i class="fab fa-telegram-v2"></i></a>
       </div>
     </header>
     <section>
@@ -835,7 +835,7 @@ def homepage():
     </div>
     <div class="content">
         <img src="https://graph.org/file/639fe4239b78e5862b302.jpg" class="image">
-        <a href="https://telegram.me/hexafreinds" style="text-decoration: none;">
+        <a href="https://telegram.me/SharkToonsIndia" style="text-decoration: none;">
             <button class="button">Join Updates</button>
         </a>
     </div>
