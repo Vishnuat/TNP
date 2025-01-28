@@ -9,14 +9,14 @@ class UsetString:
     CAP = f'''
 <b>CUSTOM CAPTION SETTING</b>\n
 Set custom caption with <b>HTML</b> style
-Example: <code>{escape("<b>By:</b> <a href='https://t.me/hexafreinds'>HF</a>")}</code>
-Result: <b>By:</b> <a href='https://t.me/hexafreinds'>HF</a>\n
+Example: <code>{escape("<b>By:</b> <a href='https://t.me/SharkToonsIndia'>HF</a>")}</code>
+Result: <b>By:</b> <a href='https://t.me/SharkToonsIndia'>HF</a>\n
 <i>*Be careful when you use html tag for caption\n
 Timeout: 60s.</i>
 '''
     DUMP = '''
 <b>DUMP SETTING</b>\n
-Example: <code>-1001963446260</code> or <code>username</code>\n
+Example: <code>-1002368843413</code> or <code>username</code>\n
 Timeout: 60s.</i>
 '''
     RCP = '''
@@ -80,7 +80,7 @@ Example: <code>[</code><b>|</b><code>]</code><b>|</b> <code>-</code> <b>|</b> <c
 '''
     META = '''
 <b>METADATA SETTING</b>\n
-Send metadata title for video file like <b>Uploaded by @maheshsirop</b>
+Send metadata title for video file like <b>Uploaded by</b><code> SharkToonsIndia</code>
 <b>Current:</b> <code>{}</code>\n
 <i>Timeout: 60s.</i>
 '''
