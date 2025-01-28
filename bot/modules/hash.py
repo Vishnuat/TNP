@@ -60,7 +60,7 @@ async def hasher(_, message: Message):
         await gather(clean_target('hash'), editMessage('Hashing error. Check Logs.', hmsg))
         return
     msg = ('<b>HASH INFO</b>\n'
-           f'<code>{fname}</code>\n'
+           f'<blockquote><code>{fname}</code>\n'
            f'<b>┌ Cc: </b>{tag}\n'
            f'<b>├ ID: </b><code>{message.from_user.id}</code>\n'
            f'<b>├ Size: </b>{get_readable_file_size(fsize)}\n'
@@ -73,7 +73,7 @@ async def hasher(_, message: Message):
            f'<b>SHA224: </b>\n<code>{hash_sha224.hexdigest()}</code>\n'
            f'<b>SHA256: </b>\n<code>{hash_sha256.hexdigest()}</code>\n'
            f'<b>SHA512: </b>\n<code>{hash_sha512.hexdigest()}</code>\n'
-           f'<b>SHA384: </b>\n<code>{hash_sha384.hexdigest()}</code>')
+           f'<b>SHA384: </b>\n<code>{hash_sha384.hexdigest()}</code></blockquote>')
     await deleteMessage(hmsg)
     hash_msg = await sendMedia(msg, message.chat.id, reply_to)
     await clean_target('hash')
