@@ -23,7 +23,7 @@ async def speedtest(_, message: Message):
         await sync_to_async(test.results.share)
         result = await sync_to_async(test.results.dict)
         caption = f'''
-<b>SPEEDTEST RESULT</b>
+<blockquote><b>SPEEDTEST RESULT</b>
 <b>┌ IP: </b>{result['client']['ip']}
 <b>├ ISP: </b>{result['client']['isp']}
 <b>├ Ping: </b>{int(result['ping'])} ms
@@ -33,7 +33,7 @@ async def speedtest(_, message: Message):
 <b>├ Download: </b>{get_readable_file_size(result['download'] / 8)}
 <b>├ Server Name: </b>{result['server']['name']}
 <b>├ Country: </b>{result['server']['country']}, {result['server']['cc']}
-<b>└ LAT/LON </b>{result['client']['lat']}/{result['client']['lon']}
+<b>└ LAT/LON </b>{result['client']['lat']}/{result['client']['lon']} </blockquote>
 '''
         await gather(deleteMessage(msg), sendPhoto(caption, message, result['share']))
     except Exception as e:
