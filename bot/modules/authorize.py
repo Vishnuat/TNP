@@ -23,7 +23,7 @@ async def authorize(_, message: Message):
         msg = 'Already Authorized By Shark Leech Bot!'
     else:
         await update_user_ldata(id_, 'is_auth', True)
-        msg = 'Authorized Successfully By Shark Leech Bot.'
+        msg = 'Authorized Successfully By RM Movie Flix Bot.'
     msg = await sendMessage(msg, message)
     await auto_delete_message(message, msg)
 
@@ -41,7 +41,7 @@ async def unauthorize(_, message: Message):
         await update_user_ldata(id_, 'is_auth', False)
         msg = 'Unauthorized Successfully Shark Leech Bot.'
     else:
-        msg = 'Already Unauthorized By Sharl Leech Bot!'
+        msg = 'Already Unauthorized By RM Movie Flix Bot!'
     msg = await sendMessage(msg, message)
     await auto_delete_message(message, msg)
 
