@@ -78,42 +78,42 @@ async def edit_video_metadata(user_id, file_path):
         'ffmpeg', '-y', '-i', file_path, '-c', 'copy',
         '-metadata:s:v:0', f'title={metadata_text}',
         '-metadata', f'title={metadata_text}',
-        '-metadata', 'copyright=Ripped And Encoded By -- SharkToonsIndia --',
-        '-metadata', 'Copyright=Ripped And Encoded By -- SharkToonsIndia --',
-        '-metadata', 'COPYRIGHT=Ripped And Encoded By -- SharkToonsIndia --',
-        '-metadata', f'description=This File Is Downloaded From "@SharkToonsIndia " so Please Join Our Channels and Support Us We Need Your Support  ~ SharkToonsIndia ',
-        '-metadata', f'Description=This File Is Downloaded From "@SharkToonsIndia " so Please Join Our Channels and Support Us We Need Your Support  ~ SharkToonsIndia ',
-        '-metadata', f'license=© @SharkToonsIndia - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
-        '-metadata', f'LICENSE=© @SharkToonsIndia - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
-        '-metadata', f'License=© @SharkToonsIndia - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
-        '-metadata', f'author=SharkToonsIndia',
-        '-metadata', f'summary=This File Is Downloaded From "@SharkToonsIndia " so Please Join Our Channels and Support Us We Need Your Support  ~ SharkToonsIndia ',
-        '-metadata', f'comment=Ripped And Encoded By -- SharkToonsIndia --',
-        '-metadata', f'Comment=Ripped And Encoded By -- SharkToonsIndia --',
-        '-metadata', f'artist=SharkToonsIndia',
-        '-metadata', f'album=SharkToonsIndia',
-        '-metadata', f'genre=SharkToonsIndia',
-        '-metadata', f'Genre=SharkToonsIndia',
-        '-metadata', f'GENRE=SharkToonsIndia',
+        '-metadata', 'copyright=Encoded By -- MLTBRM --',
+        '-metadata', 'Copyright=Encoded By -- MLTBRM --',
+        '-metadata', 'COPYRIGHT=Encoded By -- MLTBRM --',
+        '-metadata', f'description=This File Is Downloaded From "@MLTBRM " so Please Join Our Channels and Movie Channel  ~ @RM_Movie_Flix ',
+        '-metadata', f'Description=This File Is Downloaded From "@MLTBRM " so Please Join Our Channels and Movie Channel  ~ @RM_Movie_Flix ',
+        '-metadata', f'license=© @MLTBRM - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
+        '-metadata', f'LICENSE=© @MLTBRM - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
+        '-metadata', f'License=© @MLTBRM - All Rights Reserved. No reuploading or copying. DMCA Protected. Any unauthorized distribution, reproduction, or modification is a violation of DMCA and copyright laws.',
+        '-metadata', f'author=@MLTBRM And @RM_Movie_Flix',
+        '-metadata', f'summary=This File Is Downloaded From "@RM_Movie_Flix " so Please Join Our Channels and Support Us We Need Your Support  ~ @MLTBRM ',
+        '-metadata', f'comment=Ripped And Encoded By -- MLTBRM --',
+        '-metadata', f'Comment=Ripped And Encoded By -- MLTBRM --',
+        '-metadata', f'artist=MLTBRM',
+        '-metadata', f'album=MLTBRM',
+        '-metadata', f'genre=MLTBRM',
+        '-metadata', f'Genre=MLTBRM',
+        '-metadata', f'GENRE=MLTBRM',
         '-metadata', f'date=',
         '-metadata', f'creation_time=',
         '-metadata', f'language=',
-        '-metadata', f'publisher=SharkToonsIndia',
-        '-metadata', f'encoder=Encoded By SharkToonsIndia',
-        '-metadata', f'SUMMARY=This File Is Downloaded From "@SharkToonsIndia " so Please Join Our Channels and Support Us We Need Your Support  ~ SharkToonsIndia ',
-        '-metadata', f'Summary=This File Is Downloaded From "@SharkToonsIndia " so Please Join Our Channels and Support Us We Need Your Support  ~ SharkToonsIndia ',
-        '-metadata', f'AUTHOR=SharkToonsIndia',
-        '-metadata', f'WEBSITE=Just Join Our Telegram Channel https://t.me/SharkToonsIndia, there you will get all details regarding our website',
-        '-metadata', f'COMMENT=Ripped And Encoded By -- SharkToonsIndia -- ',
-        '-metadata', f'ENCODER=Encoded By SharkToonsIndia',
-        '-metadata', f'Encoder=Encoded By SharkToonsIndia',
+        '-metadata', f'publisher=RM_Movie_Flix',
+        '-metadata', f'encoder=Encoded By RM_Movie_Flix',
+        '-metadata', f'SUMMARY=This File Is Downloaded From "@RM_Movie_Flix " so Please Join Our Channels and Support Us We Need Your Support  ~ MLTBRM ',
+        '-metadata', f'Summary=This File Is Downloaded From "@RM_Movie_Flix " so Please Join Our Channels and Support Us We Need Your Support  ~ MLTBRM ',
+        '-metadata', f'AUTHOR=MLTBRM',
+        '-metadata', f'WEBSITE=Just Join Our Telegram Channel https://t.me/MLTBRM, there you will get all details regarding our website',
+        '-metadata', f'COMMENT=Ripped And Encoded By -- RM_Movie_Flix -- ',
+        '-metadata', f'ENCODER=Encoded By MLTBRM',
+        '-metadata', f'Encoder=Encoded By MLTBRM',
         '-metadata', f'FILENAME=',
         '-metadata', f'MIMETYPE=',
         '-metadata', f'PURL=',
-        '-metadata', f'ALBUM=SharkToonsIndia',
-        '-metadata', f'CHANNEL=https://t.me/SharkToonsIndia',
-        '-metadata', f'Channel=https://t.me/SharkToonsIndia',
-        '-metadata', f'channel=https://t.me/SharkToonsIndia'
+        '-metadata', f'ALBUM=MLTBRM',
+        '-metadata', f'CHANNEL=https://t.me/RM_Movie_Flix',
+        '-metadata', f'Channel=https://t.me/RM_Movie_Flix',
+        '-metadata', f'channel=https://t.me/RM_Movie_Flix'
     ]
 
     audio_index = 0
@@ -812,10 +812,10 @@ async def start(client, message):
         )
     else:
         buttons = ButtonMaker()
-        buttons.ubutton("Owner V1", "https://t.me/SupremeYoriichi")
-        buttons.ubutton("Owner", "https://t.me/OfficialCreater")
-        buttons.ubutton("Channel", "https://t.me/SharkToonsIndia")
-        buttons.ubutton("Group", "https://t.me/+yxPxkJ_tuoFmODNl")
+        buttons.ubutton("My Owner", "https://t.me/RahatMx")
+        buttons.ubutton("♻️ Mirror Leech Group", "https://t.me/RM_MirrorLeech")
+        buttons.ubutton("Update Channel", "https://t.me/MLTBRM")
+        buttons.ubutton("Movie Channel", "https://t.me/RM_Movie_Flix")
         reply_markup = buttons.build_menu(4)
         start_string = f'''This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.\nType /{BotCommands.HelpCommand} to get a list of available commands'''
         await send_to_chat(message=message, text=start_string, buttons=reply_markup, reply=True, photo=True)
