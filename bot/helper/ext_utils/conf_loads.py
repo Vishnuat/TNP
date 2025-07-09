@@ -34,10 +34,10 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'UPSTREAM_BRANCH': 'main',
                   'FSUB_BUTTON_NAME': 'Join Group',
                   'CHANNEL_USERNAME': 'MLTBRM',
-                  'AUTHOR_NAME': 'RM Mirror Leech',
-                  'AUTHOR_URL': 'https://t.me/MLTBRM',
+                  'AUTHOR_NAME': 'DC Mirror Leech',
+                  'AUTHOR_URL': 'https://t.me/TG_DC_BoTs',
                   'DRIVE_SEARCH_TITLE': 'Drive Search',
-                  'GD_INFO': 'By @MLTBRM',
+                  'GD_INFO': 'By @TG_DC_BoTs',
                   'RCLONE_TFSIMULATION': 4,
                   'SESSION_TIMEOUT': 0,
                   'PROG_FINISH': '⬢',
@@ -49,7 +49,7 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'DAILY_LIMIT_SIZE': 50,
                   'TSEARCH_TITLE': 'Torrent Search',
                   'DISABLE_VIDTOOLS': 'Nope',
-                  'COMPRESS_BANNER': 'Re-Encoded by @MLTBRM',
+                  'COMPRESS_BANNER': 'Re-Encoded by @TG_DC_BoTs',
                   'LIB264_PRESET': 'superfast',
                   'LIB265_PRESET': 'faster',
                   'HARDSUB_FONT_NAME': 'Simple Day Mistu',
@@ -348,7 +348,7 @@ async def load_config():
     IMAGE_EXTENSION = environ.get('IMAGE_EXTENSION', 'https://telegra.ph/file/e0350e6414bbc0516d10d.png')
     IMAGE_GD = environ.get('IMAGE_GD', 'https://graph.org/file/f1ebf50425a0fcb2bd01a.png')
     IMAGE_HELP = environ.get('IMAGE_HELP', 'https://graph.org/file/f75791f8ea5b7239d556d.png')
-    IMAGE_HTML = environ.get('IMAGE_HTML', 'https://graph.org/file/ea4997ce8dd4500f6d488.png')
+    IMAGE_HTML = environ.get('IMAGE_HTML', 'https://graph.org/file/ea4997ce8dd45MLT88.png')
     IMAGE_IMDB = environ.get('IMAGE_IMDB', 'https://telegra.ph/file/a8125cb4d68f7d185c760.png')
     IMAGE_INFO = environ.get('IMAGE_INFO', 'https://telegra.ph/file/9582c7742e7d12381947c.png')
     IMAGE_ITALIC = environ.get('IMAGE_ITALIC', 'https://graph.org/file/c956e4c553717a214903d.png')
@@ -410,7 +410,7 @@ async def load_config():
     AUTHOR_NAME = environ.get('AUTHOR_NAME', 'Anonim')
     AUTHOR_URL = environ.get('AUTHOR_URL', 'https://t.me/TrollUser')
     DRIVE_SEARCH_TITLE = environ.get('DRIVE_SEARCH_TITLE', 'Drive Search')
-    GD_INFO = environ.get('GD_INFO', 'Uploaded by MLTBRM Bot')
+    GD_INFO = environ.get('GD_INFO', 'Uploaded by DC BoTs Bot')
     PROG_FINISH = environ.get('PROG_FINISH', '⬢')
     PROG_UNFINISH = environ.get('PROG_UNFINISH', '⬡')
     SOURCE_LINK_TITLE = environ.get('SOURCE_LINK_TITLE', 'Source Link')
